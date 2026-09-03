@@ -1,42 +1,85 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+<meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>GameZone - Esports Tournament</title>
+<title>GameZone - Free Esports Tournaments</title>
 <style>
-body{margin:0;background:#0a0a1a;color:#fff;font-family:sans-serif}
-header{padding:12px 5%;display:flex;justify-content:space-between;align-items:center;background:#121222;position:sticky;top:0;z-index:10}
-.logo-box{display:flex;align-items:center;gap:10px;font-weight:900;font-size:22px}
-.card{background:#1a1a2e;margin:15px;padding:15px;border-radius:15px;border-left:4px solid #6cff00}
-.btn{padding:12px 0;width:100%;background:#6cff00;color:#000;border:none;border-radius:10px;font-weight:900;font-size:16px}
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Segoe UI',sans-serif}
+body{background:#0a0a12;color:#fff}
+header{padding:15px 5%;display:flex;justify-content:space-between;align-items:center;background:#121222}
+.logo{font-weight:900;font-size:22px;color:#ff0055}
+.logo span{color:#00ff88}
+.btn{padding:10px 20px;background:#ff0055;border:none;border-radius:8px;color:#fff;font-weight:700;cursor:pointer}
+.hero{padding:60px 5%;text-align:center;background:linear-gradient(135deg,#1a1030,#0a0a12)}
+.hero h1{font-size:36px;margin-bottom:10px}
+.hero p{opacity:.7;margin-bottom:20px}
+.games{display:flex;gap:10px;justify-content:center;margin:20px 0}
+.games button{padding:8px 18px;border-radius:20px;border:1px solid #333;background:#1a1a2e;color:#fff;cursor:pointer}
+.games .active{background:#00ff88;color:#000;border-color:#00ff88}
+.container{padding:20px 5%}
+.card{background:#15152a;border:1px solid #222;border-radius:16px;padding:18px;margin-bottom:15px;display:flex;justify-content:space-between;align-items:center}
+.card-left h3{font-size:18px}
+.card-left p{opacity:.6;font-size:13px;margin-top:5px}
+.badge{background:#00ff8820;color:#00ff88;padding:4px 10px;border-radius:20px;font-size:12px;font-weight:700}
+.price{color:#00ff88;font-weight:900}
+.card button{margin-top:10px}
 </style>
 </head>
 <body>
-
 <header>
-<div class="logo-box">
-<img src="logo.png" style="width:40px;height:40px;border-radius:50%;object-fit:cover;border:2px solid #6cff00">
-<div>GAME<span style="color:#6cff00">ZONE</span></div>
-</div>
-<div style="background:#ff0055;padding:8px 15px;border-radius:8px;font-weight:700;font-size:14px">LIVE</div>
+<div class="logo">GAME<span>ZONE</span></div>
+<button class="btn">Login</button>
 </header>
 
-<div style="text-align:center;padding:30px 15px">
-<h1 style="font-size:32px;margin:0">INDIA'S BIGGEST<br><span style="color:#6cff00">BGMI & FREE FIRE</span><br>TOURNAMENT</h1>
-<p>Join daily scrims & win cash prizes</p>
+<section class="hero">
+<h1>Free Daily Esports Tournaments</h1>
+<p>BGMI & Free Fire MAX - No Entry Fee - Win Real Rewards</p>
+<div class="games">
+<button class="active">All</button>
+<button>BGMI</button>
+<button>Free Fire MAX</button>
+</div>
+</section>
+
+<div class="container">
+<div class="card">
+<div class="card-left">
+<span class="badge">LIVE</span>
+<h3>BGMI - Daily Scrims #101</h3>
+<p>Map: Erangel | Time: Today 8:00 PM | Slots: 87/100</p>
+<p class="price">Prize: 500 UC + Certificate</p>
+<button class="btn">Join Free</button>
+</div>
+<div>🎮</div>
 </div>
 
 <div class="card">
-<h3>🔥 BGMI Daily Classic - ₹5000 Prize</h3>
-<p>Time: 9 PM Today | Entry: FREE | Map: Erangel</p>
-<button class="btn" onclick="window.open('https://chat.whatsapp.com/YOUR_LINK','_blank')">JOIN NOW</button>
+<div class="card-left">
+<span class="badge" style="background:#ffcc0020;color:#ffcc00">UPCOMING</span>
+<h3>Free Fire MAX - Clash Squad</h3>
+<p>Map: Bermuda | Time: Tomorrow 6:00 PM | Slots: 24/48</p>
+<p class="price">Prize: 300 Diamond</p>
+<button class="btn" style="background:#333">Register</button>
+</div>
+<div>🔥</div>
 </div>
 
 <div class="card">
-<h3>💎 Free Fire Solo - ₹2000 Prize</h3>
-<p>Time: 8 PM Today | Entry: FREE | Map: Bermuda</p>
-<button class="btn" onclick="window.open('https://chat.whatsapp.com/YOUR_LINK','_blank')">JOIN NOW</button>
+<div class="card-left">
+<span class="badge">FREE</span>
+<h3>BGMI - TDM 1v1 Challenge</h3>
+<p>Mode: TDM | Time: Daily 9 PM | Slots: Unlimited</p>
+<p class="price">Prize: ₹100 Paytm</p>
+<button class="btn">Join Free</button>
+</div>
+<div>⚔️</div>
+</div>
 </div>
 
+<footer style="text-align:center;padding:30px;opacity:.4;font-size:12px">
+This is a skill-based platform. No gambling. No betting. 16+ Only<br>
+Terms | Privacy | Contact
+</footer>
 </body>
 </html>
